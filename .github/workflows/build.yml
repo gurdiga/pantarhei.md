@@ -48,6 +48,12 @@ jobs:
           echo "<p>— And you too!</p>" >> index.html
           pwd && ls -la
           cat index.html
+          
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
+        with:
+          path: /
 
   # Deployment job
   deploy:
