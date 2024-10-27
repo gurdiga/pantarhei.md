@@ -45,6 +45,7 @@ jobs:
         run: |
           echo "<p>— Hello to you too!</p>" >> index.html
           echo "<p>— And you!</p>" >> index.html
+          date >> index.html
           pwd && ls -la
           
       - name: Upload static files as artifact
