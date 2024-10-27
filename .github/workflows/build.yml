@@ -35,3 +35,4 @@ jobs:
           echo "<p>— Hello to you too!</p>" >> index.html
           echo "<p>— And you too!</p>" >> index.html
           pwd && ls -la
+          cat index.html
