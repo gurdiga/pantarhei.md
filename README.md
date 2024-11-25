@@ -1,1 +1,1 @@
-pantarhei.md
+https://www.pantarhei.md
