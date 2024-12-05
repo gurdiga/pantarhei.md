@@ -2,5 +2,12 @@
 
 :root {
     --bs-font-sans-serif: Montserrat, 'Proxima Nova', sans-serif;
+    --brand-color: #012169;
 }
 
+
+.btn-primary {
+    --bs-btn-bg: var(--brand-color);
+    --bs-btn-hover-bg: var(--brand-color); /* opeacity 0.7 rgba() */
+    --bs-btn-border-color: var(--brand-color);
+}
