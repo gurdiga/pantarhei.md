@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --bs-font-sans-serif: Montserrat, 'Proxima Nova', sans-serif;
-    --brand-color: #012169;
+  --brand-color: #012169;
+  --brand-color-rgb: 1, 33, 104;
+
+  --bs-font-sans-serif: Montserrat, "Proxima Nova", sans-serif;
+  --bs-primary-rgb: var(--brand-color-rgb);
 }
 
-
 .btn-primary {
-    --bs-btn-bg: var(--brand-color);
-    --bs-btn-hover-bg: var(--brand-color); /* opeacity 0.7 rgba() */
-    --bs-btn-border-color: var(--brand-color);
+  --bs-btn-bg: var(--brand-color);
+  --bs-btn-hover-bg: var(--brand-color); /* opeacity 0.7 rgba() */
+  --bs-btn-border-color: var(--brand-color);
+}
+
+header.bg-primary a.active {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
