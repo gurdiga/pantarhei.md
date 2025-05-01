@@ -13,80 +13,45 @@
 </head>
 
 <body>
-    <header class="p-3 bg-primary">
-        <div class="container col-xxl-8">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img height="50" src="assets/images/logo_inverted.png" alt="Panta Rhei logo">
-                    </a>
-
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarToggler">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="servicii.html">Servicii</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="training.html">Training</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="consulting.html">Consulting</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="coaching.html">Coaching</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero -->
+    <!-- Hero BEGIN -->
     <div class="p-4 text-center bg-image" style="
         background-image: url('assets/images/pr_site-hero.jpg');
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
-        height: calc(100vh - 100px);
+        height: calc(100vh);
         position: relative;
         ">
-        <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
             <div class="text-white">
-                <h1>Suntem în perpetuă schimbare</h1>
-                <p class="lead">Și e bine să ne pregătim pentru asta.</p>
+                <h1>Traininguri ce iți aduc puterea schimbării!</h1>
 
-                <p class="mt-5" style="max-width: 35em;">Panta Rhei este o companie de training non-formal,
-                    consultanta in domeniul organizational si coaching.
-                    Pregatiti pentru schimbare, produsele si serviciile le
-                    construim impreuna cu clientul, nu avem produse de raft.
-                    Discutam, aflam nevoile si impreuna construim ceea ce e
-                    nevoie pentru transformarea si dezvoltarea voastra.</p>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <button class="btn btn-outline-light btn-lg">
+                            Programează <b>o întâlnire</b>
+                        </button>
+                    </div>
 
-                <a class="btn btn-outline-light btn-lg mt-4" href="#detalii" role="button">
-                    Află mai multe
-                </a>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <button class="btn btn-outline-light btn-lg">
+                            Descarcă PDF
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="m-5 text-end d-none d-lg-block" style="
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        ">
-            <img class="w-50" src="assets/images/logo_inverted.png" alt="Panta Rhei logo">
+            <div id="logo-placeholder" style="height: 86px;"></div>
         </div>
     </div>
-    <!-- Hero -->
+
+    <div class="m-5" style="
+                position: absolute;
+                bottom: 0;
+                left: 0;">
+        <img class="w-50" src="assets/images/hero_logo.png" alt="Panta Rhei logo">
+    </div>
+    <!-- Hero END -->
 
     <div class="container col-xxl-8 mt-5">
 
