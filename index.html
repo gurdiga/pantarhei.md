@@ -1,260 +1,381 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Panta Rhei</title>
+        <link rel="icon" href="assets/images/logo_inverted.png" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Panta Rhei</title>
-    <link rel="icon" href="assets/images/logo_inverted.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+        <link href="custom.css" rel="stylesheet" />
+    </head>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="custom.css" rel="stylesheet">
-</head>
+    <body>
+        <!-- Hero BEGIN -->
+        <div
+            class="p-4 text-center bg-image vh-100"
+            style="
+                background-image: url('assets/images/pr_site-hero.jpg');
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-size: cover;
+                position: relative;
+            "
+        >
+            <div class="d-flex flex-column justify-content-center align-items-center h-100">
+                <div class="text-white">
+                    <h1>Traininguri ce iți aduc puterea schimbării!</h1>
 
-<body>
-    <!-- Hero BEGIN -->
-    <div class="p-4 text-center bg-image" style="
-        background-image: url('assets/images/pr_site-hero.jpg');
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-size: cover;
-        height: calc(100vh);
-        position: relative;
-        ">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-            <div class="text-white">
-                <h1>Traininguri ce iți aduc puterea schimbării!</h1>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <button class="btn btn-primary text-white px-4 py-3 btn-lg">
+                                Programează <b>o întâlnire</b>
+                            </button>
+                        </div>
 
-                <div class="row mt-5">
-                    <div class="col-md-6">
-                        <button class="btn btn-outline-light btn-lg">
-                            Programează <b>o întâlnire</b>
-                        </button>
+                        <div class="col-md-6 mt-3 mt-md-0">
+                            <button class="btn btn-primary text-white px-4 py-3 btn-lg">Descarcă PDF</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="logo-placeholder" class="d-md-block d-none" style="height: 154px"></div>
+
+                <div class="m-5 w-100 text-center">
+                    <a
+                        href="#slide-2"
+                        type="button"
+                        class="px-4 py-2 text-white btn fs-1 bg-transparent z-1 position-relative"
+                        >↓</a
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="m-5 d-md-block d-none" style="position: absolute; bottom: 0; left: 0">
+            <img class="w-50" src="assets/images/hero_logo.png" alt="Panta Rhei logo" />
+        </div>
+
+        <!-- Hero END -->
+
+        <div class="container-fluid px-0 position-relative pt-5">
+            <a name="slide-2"></a>
+
+            <div class="container col-xxl-8 min-vh-100 d-flex flex-column justify-content-center align-items-md-center">
+                <div class="row mt-4 fs-7 lh-lg">
+                    <div class="col-md-8 d-flex flex-column gap-md-3">
+                        <section>
+                            <h2 class="fs-5 text-md-center text-uppercase mt-5 mb-4">
+                                E foarte posibil să te afli în urmatoarea situație:
+                            </h2>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-md-unstyled text-uppercase ps-3 mb-0">
+                                        <li><b>Organizatia ta nu-si atinge potentialul</b></li>
+                                        <li>Organizatia ta nu este suficient de eficienta</li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <ul class="list-md-unstyled text-uppercase ps-3 mb-0">
+                                        <li>Echipa ta nu manifesta claritate</li>
+                                        <li>Reactia la provocari si schmbari e lenta</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <h2 class="fs-5 text-md-center text-uppercase mt-5 mb-4">Panta Rhei te poate ajuta:</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="list-md-unstyled text-uppercase ps-3 mb-0">
+                                        <li>Sa eficientizezi timpul</li>
+                                        <li>Sa ai predictibilitate in proiecte</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="list-md-unstyled text-uppercase ps-3 mb-0">
+                                        <li>Sa-ti clarifici procesele</li>
+                                        <li>Reactia la schimbare sa devina rutina</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="list-md-unstyled text-uppercase ps-3 mb-0 text-md-center">
+                                        <li>Sa performezi ca in champions league</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="mt-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+                        >
+                            <button class="btn btn-primary text-white px-4 py-3">Programează o întâlnire</button>
+                            <button class="btn btn-primary text-white px-4 py-3">Descarcă PDF</button>
+                        </section>
                     </div>
 
-                    <div class="col-md-6 mt-3 mt-md-0">
-                        <button class="btn btn-outline-light btn-lg">
-                            Descarcă PDF
-                        </button>
+                    <div class="col-md-4">
+                        <img class="w-100" src="assets/images/slide-2-hero.jpg" alt="Slide hero image" />
+                    </div>
+                </div>
+
+                <div class="row text-center mt-3">
+                    <a href="#slide-3" type="button" class="px-4 py-2 btn fs-1 bg-transparent">↓</a>
+                </div>
+            </div>
+
+            <div class="m-5 d-md-block d-none" style="position: absolute; bottom: 0; left: 0">
+                <img class="w-50" src="assets/images/logo-black-label.png" alt="Panta Rhei logo" />
+            </div>
+        </div>
+
+        <div class="container-fluid px-0 position-relative pt-5">
+            <a name="slide-3"></a>
+
+            <div class="container col-xxl-8 min-vh-100 d-flex flex-column justify-content-center align-items-md-center">
+                <div class="row mt-4 fs-7 lh-lg">
+                    <div class="col-md-4">
+                        <img class="w-100" src="assets/images/slide-3-hero.jpg" alt="Slide hero image" />
+                    </div>
+
+                    <div class="col-md-8 d-flex flex-column gap-md-3">
+                        <section class="text-center px-md-5 mt-3 mt-md-0">
+                            <p>
+                                Noi la Panta Rhei intelegem cat de frustrant poate fi sa fii mereu presat de timp, sa nu
+                                observi schimbarile si sa simti ca echipa ta nu performeaza la potentialul ei. In lumea
+                                dinamica de azi gestionarea timpului , adaptarea laschimbare si lidershipul eficient
+                                sunt esentiale pentru succes
+                            </p>
+
+                            <p>
+                                De-a lungul anilor am testat si perfectionat metode care functioneaza. Stim cum sa te
+                                ajutam sa sa optimizezi procesele, sa cresti eficienta si sa transformi provocarile in
+                                oportunitati. fie ca vrei sa iti structurezi mai bine proiectele, sa iti motivezi echipa
+                                sau sa pozitionezi brandul mai bine, avem solutii potrivite pentru tine.
+                            </p>
+
+                            <p>
+                                Eficienta tine de timp, procese, atitudine si cunostiinte. Iti putem arata cum sa ti le
+                                gestinezi mai bine astfel incat sa obtii rezultate reale si durabile.
+                            </p>
+                        </section>
+
+                        <section
+                            class="mt-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+                        >
+                            <button class="btn btn-primary text-white px-4 py-3">Programează o întâlnire</button>
+                            <button class="btn btn-primary text-white px-4 py-3">Descarcă PDF</button>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row text-center mt-3">
+                    <a href="#slide-4" type="button" class="px-4 py-2 btn fs-1 bg-transparent">↓</a>
+                </div>
+            </div>
+
+            <div class="m-5 d-md-block d-none" style="position: absolute; bottom: 0; left: 0">
+                <img class="w-50" src="assets/images/logo-black-label.png" alt="Panta Rhei logo" />
+            </div>
+        </div>
+
+        <div class="container-fluid px-0 position-relative pt-5">
+            <a name="slide-4"></a>
+
+            <div class="container col-xxl-8 min-vh-100 d-flex flex-column justify-content-center align-items-md-center">
+                <div class="row mt-4 fs-7 lh-lg">
+                    <div class="col-md-6 d-flex flex-column gap-md-3">
+                        <section class="text-center">
+                            <h2 class="mb-4">Cum putem lucra impreuna</h2>
+
+                            <p>
+                                Ne cunoastem si analizam nevoile tale. Nu avem solutii standard. Intr-o prima intalnire
+                                discutam si intelegem specificul organizatiei tale pentru a gasi o abordare potrivita.
+                            </p>
+
+                            <p>
+                                Apoi construim impreuna un plan de actiune. Definim clar obiectivele si pasii necesari
+                                astfel incat, la final ,sa ai un plan structurat pa care sa-l implementezi cu
+                                certitudine.
+                            </p>
+
+                            <p>
+                                Pornim la drum apoi si ajustam daca e nevoie. Odata ce incepi schimbarea suntem alaturi
+                                de tine pentru feedback, ajustari si imbunatatire continua astfel incat tranzitia sa fie
+                                una de succes.
+                            </p>
+                        </section>
+
+                        <section
+                            class="mt-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+                        >
+                            <button class="btn btn-primary text-white px-4 py-3">Programează o întâlnire</button>
+                            <button class="btn btn-primary text-white px-4 py-3">Descarcă PDF</button>
+                        </section>
+                    </div>
+
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <img class="w-100" src="assets/images/slide-4-hero.jpg" alt="Slide hero image" />
+                    </div>
+                </div>
+
+                <div class="row text-center mt-3">
+                    <a href="#slide-5" type="button" class="px-4 py-2 btn fs-1 bg-transparent">↓</a>
+                </div>
+            </div>
+
+            <div class="m-5 d-md-block d-none" style="position: absolute; bottom: 0; left: 0">
+                <img class="w-50" src="assets/images/logo-black-label.png" alt="Panta Rhei logo" />
+            </div>
+        </div>
+
+        <div class="container-fluid px-0 position-relative pt-5">
+            <a name="slide-5"></a>
+
+            <div class="container col-xxl-8 min-vh-100 d-flex flex-column justify-content-center align-items-md-center">
+                <div class="row mt-4 fs-7 lh-lg">
+                    <div class="col">
+                        <section>
+                            <p>
+                                La Panta Rhei intelegem cat de mult iti doresti sa te concentrezi pe activitatile
+                                esentiale fara sa-ti faci griji despre functionarea interna a organizatiei.
+                            </p>
+
+                            <p>
+                                Pentru a reusi acest lucru ai nevoie de o echipa bine pregatita si de instrumente
+                                necesare pentru a deveni eficient, de incredere si capabila sa faca fata provocarilor
+                            </p>
+
+                            <p>
+                                Problema apare atunci cand organizatia intra intr-o stare de stagnare. timpul,
+                                procesele, schimbarile, lidershipul si eficienta sunt trecute cu vederea iar analiza si
+                                optimizarile sunt permanent amanate fiindca toata atentia este consumata de nevoile
+                                imediate.
+                            </p>
+
+                            <p>
+                                Insa intr-o lume aflata in continua schimbare realitatea poate avansa mai repede decat
+                                capacotatea noastra reactie. Lipsa de adaptare aduce frustrare, ingrijorare si uneori
+                                sentimentul ca succesul se indeparteaza. Dar schimbarea nu este imposibila iar
+                                frustrarea nu trebuie sa apara.
+                            </p>
+
+                            <p>
+                                Intelegem cat de frustrant poate fi sa observi ca ai fost ineficient sau ca reactia la
+                                schimbare a fost intarziata, vestea buna , insa, este ca poti schimba acest lucru.
+                                Eficienta si adaptabilitatea depind de cum gestionezi timpul, procesele atitudinea si
+                                cunostiintele. Noi te putem ghida pentru a le optimiza si pentru a reactiona rapid si
+                                eficient la schimbare. de-a lungul anilor am testat si perfectionat metode care
+                                functioneaza.
+                            </p>
+
+                            <p>
+                                Iata cum putem sa facem: ne cunoastem si analizam nevoile tale. Nu oferim solutii
+                                standard. Intr-o prima intalnire discutam si intelegem specificul organizatiei tale
+                                pentru a explora o abordare potrivita. Construim, apoi, impreuna, un plan de actiune.
+                                Definim clar obiectivele si pasii necesari astfel incat sa ai un plan structurat pe care
+                                sa-l implementezi cu incredere.
+                            </p>
+
+                            <p>
+                                Implementam si ajustam. Odata ce incepi schimbarea suntem alaturi de tine pentru
+                                feedback ajustari si imbunatatiri continue si astfel sa asiguram o tranzitie de succes.
+                            </p>
+
+                            <p>
+                                Asadar programeaza o intalnire si hai sa gasim solutia potrivita pentru organizatia ta.
+                            </p>
+
+                            <p>
+                                Pana atunci descarca acest PDF cu 5 principii esentiale despre o organizatie vie care te
+                                poate inspira in acest proces.
+                            </p>
+
+                            <p>
+                                Este momentul sa depasesti stagnarea si sa contruiesti o organizatie eficienta, de
+                                incredere si capabila sa faca fata provocarilor.
+                            </p>
+                        </section>
+
+                        <section
+                            class="mt-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
+                        >
+                            <button class="btn btn-primary text-white px-4 py-3">Programează o întâlnire</button>
+                            <button class="btn btn-primary text-white px-4 py-3">Descarcă PDF</button>
+                        </section>
                     </div>
                 </div>
             </div>
 
-            <div id="logo-placeholder" style="height: 86px;"></div>
-        </div>
-    </div>
-
-    <div class="m-5" style="
-                position: absolute;
-                bottom: 0;
-                left: 0;">
-        <img class="w-50" src="assets/images/hero_logo.png" alt="Panta Rhei logo">
-    </div>
-    <!-- Hero END -->
-
-    <div class="container col-xxl-8 mt-5">
-
-        <a name="detalii"></a>
-        <div class="row pt-5">
-            <div class="col-md-6">
-                <img src="assets/images/trenul.jpg" class="w-100 mb-4" />
-            </div>
-
-            <div class="col-md-6">
-                <h2 class="mb-4">De ce Panta Rhei?</h2>
-
-                <p>“Panta Rhei” tradus ca “totul curge” este unul dintre
-                    cele mai faimoase citate filosofice din toate
-                    timpurile.</p>
-
-                <p>“Panta Rhei” este o versiune simplificată a
-                    învățăturilor celebrului filosof grec Heraclit. În
-                    esență, înseamnă că totul curge. Iar totul în Univers
-                    este într-adevăr în continuă mișcare, spiralându-se și
-                    deplasându-se prin spațiu.</p>
-
+            <div class="m-5 d-md-block d-none" style="position: absolute; bottom: 0; left: 0">
+                <img class="w-50" src="assets/images/logo-black-label.png" alt="Panta Rhei logo" />
             </div>
         </div>
 
-        <p>Cu puțin mai mult de 2200 de ani în urmă, în orașul ionic
-            Efes (Turcia de azi), s-a născut una dintre cele mai importante
-            figuri din istoria filosofiei. Heraclit a gandit că universul
-            este o continuă devenire, un proces de schimbare. Deoarece
-            singura carte scrisă de el (Despre natura) s-a pierdut, opera sa
-            a supraviețuit în fragmente păstrate în scrierile altor autori
-            antici. Datorită naturii criptice și adesea ambigue a acestor
-            fragmente, el a devenit cunoscut drept Cel obscur.</p>
+        <div class="container col-xxl-8 mt-5">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Panta Rhei</span>
+                </div>
 
-        <p>Filosofia lui Heraclit este una a mișcării și a schimbării.
-            Deși, la prima vedere, nu pare atât de profundă, remarca lui
-            Heraclit este una dintre cele mai profunde și influente zicale
-            din istoria civilizației occidentale. Așadar, ce a vrut să spună
-            Heraclit mai exact?</p>
-
-        <p>Pentru Heraclit, focul hrănește viața care se mișcă în sus pe
-            o cale a creației. Urmează apoi o cale descendentă a
-            distrugerii, pe măsură ce viața cedează locul morții într-o cale
-            circulară care nu încetează niciodată. Filosoful indian Sri
-            Aurobindo a găsit o mulțime de asemănări între gândirea lui
-            Heraclit și diverse forme de misticism hindus. El a comparat
-            chiar căile lui Heraclit cu pravṛtti și nivṛtti, adică cele două
-            căi spre mântuire, una prin activism și una prin retragere.</p>
-
-        <p>John Burnett, autorul cărții The Early Greek Philosophy
-            (1892), credea că "Panta Rhei", tradusă prin "Toate lucrurile
-            curg", încapsula perfect filosofia heracliteană a fluxului. Cu
-            toate acestea, Burnett credea, de asemenea, că Heraclit însuși
-            nu a folosit niciodată această expresie. Kostas Axelos, un alt
-            savant modern care l-a studiat în profunzime pe Heraclit, a fost
-            de acord cu Burnett. De fapt, nu există nicio sursă antică care
-            să susțină că Heraclit a spus vreodată Panta Rhei. Dar, în orice
-            caz, putem înțelege cu ușurință de ce autorii de mai târziu i-au
-            atribuit fraza lui Heraclit.</p>
-
-        <p>În Cratylos (Dialoguri) Platon (402a), Socrate spune:</p>
-
-        <p>"Heraclit spune, știi, că toate lucrurile se mișcă și nimic
-            nu rămâne nemișcat, și aseamănă universul cu curentul unui râu,
-            spunând că nu poți păși de două ori în același curent".</p>
-
-        <p>După cum pare să argumenteze Socrate, acest râu al lui
-            Heraclit nu era doar o simplă acceptare a unui univers în
-            mișcare. Mai mult decât atât, era un curent cosmic. Era curentul
-            schimbării:</p>
-
-        <p>"Nu poți păși de două ori în aceleași râuri; pentru că apele
-            proaspete curg mereu peste tine."</p>
-
-        <p>Totul în jurul nostru se schimbă, la fel cum apele proaspete
-            curg mereu, reînnoind pârâul. Acesta este de obicei punctul în
-            care majoritatea își opresc analiza. Dar Heraclit nu a spus doar
-            că universul se mișcă și se schimbă. El a mai spus că noi ne
-            schimbăm odată cu el. Nu este vorba doar de faptul că nu poți
-            păși de două ori în același râu, deoarece râul se schimbă
-            constant. Chiar dacă râul ar rămâne static, nu ar exista
-            niciodată două momente în care ai fi la fel.</p>
-
-        <p>Deci e vorba in mod esential despre schimbare. Si se pare ca
-            singurul lucru cu existenta continua de-a lungul timpului este
-            schimbarea! Deci trebuie sa fim pregatiti tot timpul pentru
-            schimbare! In scoala nu am fost invatati despre asta. Tot ce am
-            invatat era cumva, prezumtiv, etern. Nu ne-a pregatit scoala sa
-            fim in stare macar sa percepem ca schimbarea e defapt regula! E
-            drept ca legile naturii sunt eventual eterne, sau macar pe
-            termen lung valabile, insa circumstantele in care ele se aplica
-            nu sunt niciodata la fel.</p>
-
-        <p>Iar daca schimbarea este un continuum al realitatatii,
-            atunci, exact in fata schimbarii noi trebuie sa fim
-            pregatiti.</p>
-
-        <p>Aici la Panta Rhei exact asta sta in centrul atentie noastre.
-            Asa cum Marcus Aurelius concluziona ca “Totul e schimbare” asa
-            si noi credem ca despre orice ar fi vorba in final e vorba de
-            schimbare:</p>
-
-        <p><b>Project Management</b> – schimbarea unei situatii de
-            moment cu una mai buna, mai eficienta, mai pregatita pt
-            schimbari ulterioare</p>
-
-        <p><b>Time Management</b> – Schimbarea atitudinii fata de timpul
-            ce curge neincetat</p>
-
-        <p><b>Change Management</b> – Schimbarea atitudinii in fata
-            Schimbarii! 😊</p>
-
-        <p><b>Coaching</b> – Schimbarea interioara, atitudine,
-            actiune,</p>
-
-        <p>Lista poate continua si cu siguranta in descriere, Schimbarea
-            va fi pionul principal de fiecare data.</p>
-
-        <div class="row">
-
-            <div class="col-md-6">
-                <p>Schimbarea poate fi reactiva sau activa, uneori actionam si trebuie sa ne adaptam la schimbarile
-                    exterioare, si asta e un fel de adaptabilitate dar poate totodata sa vina din interior pentru ca nu
-                    ne mai place ce se intimpla, sau in mod creativ ajungem sa vrem altceva, altfel, altcumva.</p>
-
-                <p>Schimbarea e realitatea indifirent cum ne uitam la fenomen, reactiv, activ, anticipativ.</p>
-
-                <p>Bogdan Craiu, fondatorul Panta Rhei, certifcat in
-                    Administrare de Business, in Project Management, in
-                    formare ca Trainer acreditat in Romania si Moldova, in
-                    Coaching, a parcurs un drum lung , greu, frumos, si
-                    cumulativ de la Inginer in industria Telecom, la Manager
-                    de top, C level, in industrii ca Telecom, Satellite,
-                    Life Streaming Communication, Software Development, cu 3
-                    premiere mondiale in calitate de Project Manager, ca mai
-                    apoi sa aleaga ca tot ceea ce a acumulat sa ofere celor
-                    pe care ii formeaza in trainigurile sale. Parcursul sau
-                    ne spune ca probabil schimbarea nu ii e straina, ba
-                    dimpotriva.</p>
-
-            </div>
-
-            <div class="col-md-6">
-                <img src="assets/images/schimbare.jpg" class="w-100 mb-4" />
-            </div>
-
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#">
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#">
+                            <svg class="bi" width="24" height="24">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-body-secondary" href="#"
+                            ><svg class="bi" width="24" height="24">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </footer>
         </div>
 
-        <p>La “Panta Rhei” ne propunem sa fim in sprijinul celor care vor sa faca schimbarea sau au nevoie sa invete
-            pentru a putea face schimbarea.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="facebook" viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                />
+            </symbol>
+            <symbol id="instagram" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                />
+            </symbol>
+            <symbol id="twitter" viewBox="0 0 16 16">
+                <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+            </symbol>
+        </svg>
 
-        <p>In viziunea noastra toti oamenii sunt indreptatiti sa-si atinga obiectivele, visele, aspiratiile. Pentru a
-            reusi asta avem nevoie insa de unelte si cunostiinte pe care, poate, nu le avem la indemana si atunci cel
-            mai bine e sa acceptam ajutorul celor care pot facilita acest proces pentru ca orice sprijin e un dar
-            nepretuit si valoros.</p>
-
-        <p>Totodata omul si adevarul ne par valori primordiale la care tinem intrucit schimbarea e pentru om si nu poate
-            avea loc decat in proximitatea adevarului. In orice organizatie omul este primordial intrucat e esenta
-            acelei organizatii, iar adevarul e baza oricarei constructii ontologice.</p>
-
-        <div class="text-center mt-5">
-            <a href="#top" role="button" class="btn btn-primary">Back</a>
-        </div>
-    </div>
-
-    <div class="container col-xxl-8 mt-5">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center">
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Panta Rhei</span>
-            </div>
-
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#twitter"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a></li>
-            </ul>
-        </footer>
-    </div>
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-        <symbol id="facebook" viewBox="0 0 16 16">
-            <path
-                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-        </symbol>
-        <symbol id="instagram" viewBox="0 0 16 16">
-            <path
-                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-        </symbol>
-        <symbol id="twitter" viewBox="0 0 16 16">
-            <path
-                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-        </symbol>
-    </svg>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-</body>
-
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
