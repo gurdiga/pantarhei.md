@@ -41,6 +41,11 @@ header.bg-primary a.active {
   background-color: var(--pr-button-background);
 }
 
+h1,
+h2 {
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .fs-md-7 {
     font-size: var(--bs-body-font-size);
