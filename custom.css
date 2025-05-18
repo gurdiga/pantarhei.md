@@ -42,6 +42,10 @@ header.bg-primary a.active {
 }
 
 @media (min-width: 768px) {
+  .fs-md-7 {
+    font-size: var(--bs-body-font-size);
+  }
+
   .text-md-uppercase {
     text-transform: uppercase !important;
   }
