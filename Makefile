@@ -6,4 +6,4 @@ edit:
 
 s: start
 start:
-	open index.html
+	open index-new.html
