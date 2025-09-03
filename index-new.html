@@ -37,6 +37,12 @@
                 cursor: pointer;
                 padding: 0.5em 1em;
             }
+
+            .scroll-btn {
+                border: none;
+                background: transparent;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>
@@ -70,9 +76,27 @@
                     </p>
                 </div>
 
-                <div class="d-flex gap-5 ps-5" style="margin-top: 70px">
-                    <button class="cta-button">Programează o întâlnire</button>
-                    <button class="cta-button">Despre Panta Rhei</button>
+                <div class="d-flex align-items-start ps-5" style="margin-top: 70px">
+                    <button class="cta-button order-1">Programează o întâlnire</button>
+                    <button class="cta-button order-3">Despre Panta Rhei</button>
+
+                    <button class="scroll-btn order-2" style="margin-top: 100px" title="Scroll down">
+                        <svg viewBox="0 0 41 45" width="30" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="textGradient">
+                                    <stop offset="0%" stop-color="#6da7f2" />
+                                    <stop offset="100%" stop-color="#6fe7f7" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                fill="url(#textGradient)"
+                                d="
+                                    M0 4.5 L5.5 0 L20.5 15 L35.5 0 L41 4.5 L20.5 25 Z
+                                    M0 24.5 L5.5 20 L20.5 35 L35.5 20 L41 24.5 L20.5 45 Z
+                                "
+                            />
+                        </svg>
+                    </button>
                 </div>
 
                 <img
