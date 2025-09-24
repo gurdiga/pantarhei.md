@@ -19,29 +19,76 @@
         />
 
         <style>
-            h1 {
+            h1,
+            h2 {
                 font-family: 'Sofia Sans Condensed', sans-serif;
                 text-transform: uppercase;
                 font-weight: 300;
             }
 
-            body {
-                font-family: 'Montserrat', sans-serif;
+            h2 {
+                font-weight: 500;
             }
 
-            .cta-button {
+            body {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+
+            .pr-cta-button {
                 background: linear-gradient(90deg, #6da7f2 0%, #6fe7f7 100%);
                 color: #000;
                 border: none;
-                border-radius: 6px;
-                cursor: pointer;
-                padding: 0.5em 1em;
             }
 
-            .scroll-btn {
+            .pr-ghost-button {
+                border: 1px solid;
+                background: transparent;
+            }
+
+            .pr-cta-button,
+            .pr-ghost-button {
+                font-weight: 500;
+                padding: 0.5em 1.5em;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .pr-scroll-button {
                 border: none;
                 background: transparent;
                 cursor: pointer;
+            }
+
+            .pr-card {
+                position: relative;
+                padding: 3em;
+                border-radius: 0 3em 0 0;
+                overflow: hidden;
+            }
+
+            .pr-card::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: linear-gradient(180deg, rgba(41, 133, 243, 1) 0%, rgba(80, 227, 255, 1) 100%);
+                filter: brightness(125%);
+                opacity: 0.75;
+                z-index: -1;
+            }
+
+            .pr-card::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: url('assets/images/pr-card-bg.jpg');
+                background-size: cover;
+                opacity: 0.5;
+                z-index: -1;
             }
         </style>
     </head>
@@ -73,7 +120,7 @@
 
                     <div style="font-size: 20px; font-weight: 200; max-width: 35em; margin-top: 32px">
                         <p>
-                            Panta Rhei este o companie de training nan-formal, consultanță în domeniul organizațional si
+                            Panta Rhei este o companie de training non-formal, consultanță în domeniul organizațional si
                             coaching. Pregătiți pentru schimbare, produsele și serviciile le construim împreună cu
                             clientul, nu avem produse de raft.
                         </p>
@@ -84,11 +131,11 @@
                         </p>
                     </div>
 
-                    <div class="d-flex align-items-start ps-5" style="margin-top: 70px">
-                        <button class="cta-button order-1">Programează o întâlnire</button>
-                        <button class="cta-button order-3">Despre Panta Rhei</button>
+                    <div class="d-flex align-items-start ps-5 pb-5 mb-4" style="margin-top: 70px">
+                        <button class="pr-cta-button order-1">Programează o întâlnire</button>
+                        <button class="pr-cta-button order-3">Despre Panta Rhei</button>
 
-                        <button class="scroll-btn order-2" style="margin-top: 100px" title="Scroll down">
+                        <button class="pr-scroll-button order-2" style="margin-top: 100px" title="Scroll down">
                             <svg viewBox="0 0 41 45" width="30" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="textGradient">
@@ -109,5 +156,68 @@
                 </div>
             </div>
         </section>
+
+        <section id="slide-2">
+            <div class="container" style="max-width: 1100px">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6">
+                        <img src="assets/images/slide-2-hero-new.jpg" style="width: 500px; margin-top: -2em" alt="" />
+                    </div>
+
+                    <div class="col-md-6 py-4">
+                        <h2 style="max-width: 12em">E foarte posibil să te afli în următoarea situație:</h2>
+
+                        <ul class="list-unstyled ms-3 mt-3" style="font-weight: 300">
+                            <li class="mt-1">Organizația ta nu-și atinge potențialul</li>
+                            <li class="mt-1">Organizația ta nu este suficient de eficientă</li>
+                            <li class="mt-1">Echipa ta nu manifestă claritate</li>
+                            <li class="mt-1">Reacția la provocări și schimbări e lentă</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6">
+                        <div class="pr-card" style="transform: translateY(-40px); margin-right: -50px">
+                            <h2 style="font-size: 25px; font-weight: 800">
+                                <span style="font-size: 150%; font-weight: 700">5 gânduri valide</span><br />
+                                pentru o organizație vie
+                            </h2>
+
+                            <p class="lh-sm" style="font-size: 16px; font-weight: 300; max-width: 20em">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of usinf Lorem Ipsum
+                            </p>
+
+                            <button class="pr-ghost-button ms-4 mt-4">Descarcă PDF</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 py-4 d-flex flex-column align-items-center">
+                        <h2 style="max-width: 12em">Panta Rhei te poate ajuta:</h2>
+
+                        <div class="flex-shrink-0">
+                            <ul class="list-unstyled mt-3" style="font-weight: 300">
+                                <li class="mt-1">Să eficientizezi timpul</li>
+                                <li class="mt-1">Să ai predictibilitate in proiecte</li>
+                                <li class="mt-1">Să-ți clarifici procesele</li>
+                                <li class="mt-1">Reacția la schimbare să devină rutină</li>
+                                <li class="mt-1">Să performezi ca în Champions League</li>
+                            </ul>
+
+                            <div class="mt-4 ps-4">
+                                <button class="pr-cta-button">Programează o întâlnire</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="py-5">Aici vor fi mai multe secțiuni.</p>
+        <p class="py-5">Aici vor fi mai multe secțiuni.</p>
+        <p class="py-5">Aici vor fi mai multe secțiuni.</p>
+        <p class="py-5">Aici vor fi mai multe secțiuni.</p>
+        <p class="py-5">Aici vor fi mai multe secțiuni.</p>
     </body>
 </html>
