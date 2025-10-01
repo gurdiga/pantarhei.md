@@ -24,9 +24,11 @@
                 font-family: 'Alumni Sans', sans-serif;
                 text-transform: uppercase;
                 font-weight: 300;
+                line-height: 1;
             }
 
             h2 {
+                color: #011a53;
                 font-weight: 500;
             }
 
@@ -94,6 +96,7 @@
             .pr-card h2 {
                 font-size: 27px;
                 font-weight: 700;
+                color: black;
             }
 
             .pr-card h2 > em {
@@ -109,6 +112,28 @@
                 font-style: normal;
                 font-variant-caps: small-caps;
                 line-height: 100%;
+            }
+
+            .pr-large-ol {
+                list-style: none;
+                padding: 0;
+                counter-reset: pr-list-counter;
+            }
+
+            ol.pr-large-ol li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5em;
+            }
+
+            ol.pr-large-ol li::before {
+                counter-increment: pr-list-counter;
+                content: counter(pr-list-counter);
+                color: #648fc5;
+                font-family: 'Alumni Sans', sans-serif;
+                font-size: 300%;
+                line-height: 1;
+                min-width: 1em;
             }
         </style>
     </head>
@@ -154,9 +179,9 @@
                         alt="Panta Rhei logo"
                     />
 
-                    <h1 style="font-size: 4em">
-                        <span style="font-size: 150%; font-weight: 400">Traininguri</span><br />
-                        ce îți aduc puterea schimbării
+                    <h1 class="my-5" style="font-size: 4em">
+                        <span style="font-size: 150%">Traininguri</span><br />
+                        <span style="font-weight: 200">ce îți aduc puterea schimbării</span>
                     </h1>
 
                     <div style="font-size: 20px; font-weight: 200; max-width: 35em; margin-top: 32px">
@@ -306,10 +331,7 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div
-                                        class="pr-card ms-3 text-black"
-                                        style="transform: translateY(0); margin-right: -250px"
-                                    >
+                                    <div class="pr-card ms-3" style="transform: translateY(0); margin-right: -250px">
                                         <h2>
                                             <em>10 citate</em><br />
                                             pentru o organizație vie
@@ -327,12 +349,111 @@
                             </div>
 
                             <div class="d-flex justify-content-center py-5">
-                                <button class="pr-scroll-button" title="Scroll down" data-target-selector="#slide-4">
+                                <button data-target-selector="#slide-4" class="pr-scroll-button" title="Scroll down">
                                     <svg viewBox="0 0 41 45" width="30" aria-hidden="true" focusable="false">
                                         <use href="#pr-scroll-icon" />
                                     </svg>
                                 </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide-4">
+            <div class="container pt-4">
+                <div class="row" style="font-weight: 200">
+                    <div class="col-md-6">
+                        <h2 class="my-5" style="font-size: 320%; font-weight: 200">Cum putem lucra împreună</h2>
+
+                        <div class="ms-5">
+                            <p style="margin-inline-start: 54px">
+                                Ne cunoaștem și analizăm nevoile tale.<br />
+                                Nu avem soluții standard.
+                            </p>
+
+                            <ol class="pr-large-ol mt-5" style="max-width: 30em">
+                                <li>
+                                    Într-o primă întâlnire discutăm și înțelegem specificul organizației tale pentru a
+                                    găsi o abordare potrivită.
+                                </li>
+
+                                <li>
+                                    Construim împreună un plan de acțiune. Definim clar obiectivele și pașii necesari
+                                    astfel încât, la final, să ai un plan structurat pe care să-l implementezi cu
+                                    certitudine.
+                                </li>
+
+                                <li>
+                                    Pornim la drum apoi și ajustăm dacă e nevoie. Odată ce începi schimbarea, suntem
+                                    alături de tine pentru feedback, ajustări și îmbunătățire continuă astfel încât
+                                    tranziția să fie una de success.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="assets/images/hand-with-cubes.jpg" style="max-width: 100%" alt="" />
+
+                        <div class="row mt-5">
+                            <div class="col-6">
+                                <button class="pr-cta-button">Programează o întâlnire</button>
+                            </div>
+                            <div class="col-6 text-end">
+                                <img src="assets/images/pr_logo_2.png" style="width: 160px" alt="Panta Rhei logo" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="font-size: 16px">
+                    <div class="col-md-4 offset-md-2 lh-sm" style="text-align: justify">
+                        <p
+                            style="
+                                font-variant: small-caps;
+                                font-family: 'Alumni Sans', sans-serif;
+                                font-weight: 500;
+                                font-size: 33px;
+                                line-height: 1;
+                                color: #445b8f;
+                            "
+                        >
+                            La Panta Rhei înțelegem cât de mult îți dorești să te concentrezi pe activitățile esențiale
+                            fără să-ți faci griji despre funcționarea internă a organizației.
+                        </p>
+
+                        <p>
+                            Pentru a reuși acest lucru ai nevoie de o echipă bine pregătită și de instrumente necesare
+                            pentru a deveni eficient, de încredere și capabilă să facă față provocărilor.
+                        </p>
+
+                        <p>
+                            Problema apare atunci când organizația intră într-o stare de stagnare. Timpul, procesele,
+                            schimbările, leadership-ul și eficiența sunt trecute cu vederea, iar analiza și optimizările
+                            sunt permanent amânate fiindcă toată atenția este consumată de nevoile imediate.
+                        </p>
+
+                        <p>
+                            Însă într-o lume aflată în continuă schimbare, realitatea poate avansa mai repede decât
+                            capacitatea noastră de reacție. Lipsa de adaptare aduce frustrare, îngrijorare și uneori
+                            sentimentul că succesul se îndepărtează. Dar schimbarea nu este imposibilă iar frustrarea nu
+                            trebuie să apară.
+                        </p>
+
+                        <div class="pr-card ms-3" style="transform: translateX(0); margin-right: -15px">
+                            <h2>
+                                <em>10 citate</em><br />
+                                pentru o organizație vie
+                            </h2>
+
+                            <p class="lh-sm" style="font-size: 16px; font-weight: 300; max-width: 20em">
+                                It is a long established fact that a reader will be distracted by the readable content
+                                of a page when looking at its layout. The point of using Lorem Ipsum
+                            </p>
+
+                            <button class="pr-ghost-button ms-4 mt-4">Descarcă PDF</button>
                         </div>
                     </div>
                 </div>
