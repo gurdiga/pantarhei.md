@@ -14,14 +14,14 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap"
             rel="stylesheet"
         />
 
         <style>
             h1,
             h2 {
-                font-family: 'Sofia Sans Condensed', sans-serif;
+                font-family: 'Alumni Sans', sans-serif;
                 text-transform: uppercase;
                 font-weight: 300;
             }
@@ -66,7 +66,7 @@
 
             .pr-card {
                 position: relative;
-                padding: 3em;
+                padding: 2.5em;
                 border-radius: 0 3em 0 0;
                 overflow: hidden;
             }
@@ -90,9 +90,50 @@
                 opacity: 0.5;
                 z-index: -1;
             }
+
+            .pr-card h2 {
+                font-size: 27px;
+                font-weight: 700;
+            }
+
+            .pr-card h2 > em {
+                font-style: normal;
+                font-size: 150%;
+                font-weight: 600;
+            }
+
+            .pr-em {
+                font-family: 'Alumni Sans', sans-serif;
+                font-size: 270%;
+                font-weight: 300;
+                font-style: normal;
+                font-variant-caps: small-caps;
+                line-height: 100%;
+            }
         </style>
     </head>
+
     <body>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            style="position: absolute; width: 0; height: 0; overflow: hidden"
+            aria-hidden="true"
+            focusable="false"
+        >
+            <defs>
+                <linearGradient id="pr-scroll-gradient">
+                    <stop offset="0%" stop-color="#6da7f2" />
+                    <stop offset="100%" stop-color="#6fe7f7" />
+                </linearGradient>
+            </defs>
+            <symbol id="pr-scroll-icon" viewBox="0 0 41 45">
+                <path
+                    fill="url(#pr-scroll-gradient)"
+                    d="M0 4.5 L5.5 0 L20.5 15 L35.5 0 L41 4.5 L20.5 25 Z M0 24.5 L5.5 20 L20.5 35 L35.5 20 L41 24.5 L20.5 45 Z"
+                />
+            </symbol>
+        </svg>
+
         <section
             id="slide-1"
             class="d-flex justify-content-center align-items-center"
@@ -135,21 +176,14 @@
                         <button class="pr-cta-button order-1">Programează o întâlnire</button>
                         <button class="pr-cta-button order-3">Despre Panta Rhei</button>
 
-                        <button class="pr-scroll-button order-2" style="margin-top: 100px" title="Scroll down">
-                            <svg viewBox="0 0 41 45" width="30" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <linearGradient id="textGradient">
-                                        <stop offset="0%" stop-color="#6da7f2" />
-                                        <stop offset="100%" stop-color="#6fe7f7" />
-                                    </linearGradient>
-                                </defs>
-                                <path
-                                    fill="url(#textGradient)"
-                                    d="
-                                    M0 4.5 L5.5 0 L20.5 15 L35.5 0 L41 4.5 L20.5 25 Z
-                                    M0 24.5 L5.5 20 L20.5 35 L35.5 20 L41 24.5 L20.5 45 Z
-                                "
-                                />
+                        <button
+                            data-target-selector="#slide-2"
+                            class="pr-scroll-button order-2"
+                            style="margin-top: 100px"
+                            title="Scroll down"
+                        >
+                            <svg viewBox="0 0 41 45" width="30" aria-hidden="true" focusable="false">
+                                <use href="#pr-scroll-icon" />
                             </svg>
                         </button>
                     </div>
@@ -159,13 +193,15 @@
 
         <section id="slide-2">
             <div class="container" style="max-width: 1100px">
-                <div class="row justify-content-center align-items-center">
+                <div class="row justify-content-center">
                     <div class="col-md-6">
                         <img src="assets/images/slide-2-hero-new.jpg" style="width: 500px; margin-top: -2em" alt="" />
                     </div>
 
                     <div class="col-md-6 py-4">
-                        <h2 style="max-width: 12em">E foarte posibil să te afli în următoarea situație:</h2>
+                        <h2 class="mt-5" style="max-width: 12em">
+                            E foarte posibil să te afli în următoarea situație:
+                        </h2>
 
                         <ul class="list-unstyled ms-3 mt-3" style="font-weight: 300">
                             <li class="mt-1">Organizația ta nu-și atinge potențialul</li>
@@ -178,15 +214,15 @@
 
                 <div class="row flex-row-reverse">
                     <div class="col-md-6">
-                        <div class="pr-card" style="transform: translateY(-40px); margin-right: -50px">
-                            <h2 style="font-size: 25px; font-weight: 800">
-                                <span style="font-size: 150%; font-weight: 700">5 gânduri valide</span><br />
+                        <div class="pr-card ms-3" style="transform: translateY(-100px); margin-right: -50px">
+                            <h2>
+                                <em>5 gânduri valide</em><br />
                                 pentru o organizație vie
                             </h2>
 
                             <p class="lh-sm" style="font-size: 16px; font-weight: 300; max-width: 20em">
                                 It is a long established fact that a reader will be distracted by the readable content
-                                of a page when looking at its layout. The point of usinf Lorem Ipsum
+                                of a page when looking at its layout. The point of using Lorem Ipsum
                             </p>
 
                             <button class="pr-ghost-button ms-4 mt-4">Descarcă PDF</button>
@@ -205,8 +241,97 @@
                                 <li class="mt-1">Să performezi ca în Champions League</li>
                             </ul>
 
-                            <div class="mt-4 ps-4">
+                            <div class="mt-4 ps-4 d-flex flex-column align-items-start">
                                 <button class="pr-cta-button">Programează o întâlnire</button>
+
+                                <img
+                                    src="assets/images/pr_logo_2.png"
+                                    style="width: 160px"
+                                    class="my-5"
+                                    alt="Panta Rhei logo"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="slide-3"
+            class="d-flex justify-content-center align-items-center"
+            style="
+                min-height: 100vh;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+                    url('assets/images/slide-3-bg.jpg');
+                background-size: cover;
+                color: white;
+            "
+        >
+            <div>
+                <div class="container pt-4">
+                    <div class="row">
+                        <div class="col-7 offset-md-3 pt-5 pe-5">
+                            <p>
+                                <em class="pr-em">Noi la Panta Rhei înțelegem</em> cât de frustrant poate fi să fii
+                                mereu presat de timp, să nu observi schimbările și să simți că echipa ta nu performează
+                                la potențialul ei. În lumea dinamică de azi, gestionarea timpului, adaptarea la
+                                schimbare și leadership-ul eficient sunt esențiale pentru success.
+                            </p>
+
+                            <p class="mt-4">
+                                De-a lungul anilor am testat și perfecționat
+                                <em class="pr-em">metode care funcționează</em>. Știm cum să te ajutăm să optimizezi
+                                procesele, să crești eficiența și să transformi provocările în oportunități. Fie că vrei
+                                să-ți structurezi mai bine proiectele, să îți motivezi echipa sau să poziționezi
+                                brand-ul mai bine, avem soluții potrivite pentru tine.
+                            </p>
+
+                            <p class="mt-4">
+                                <em class="pr-em">Eficiența ține de timp, procese, atitudine și cunoștințe</em>. Îți
+                                putem arăta cum să ți le gestionez mai bine astfel încât să obții rezultate reale și
+                                durabile.
+                            </p>
+
+                            <div class="row mt-5 pt-5">
+                                <div class="col-md-6">
+                                    <button class="pr-cta-button">Programează o întâlnire</button>
+
+                                    <img
+                                        src="assets/images/hero_logo.png"
+                                        style="width: 160px"
+                                        class="mt-5"
+                                        alt="Panta Rhei logo"
+                                    />
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div
+                                        class="pr-card ms-3 text-black"
+                                        style="transform: translateY(0); margin-right: -250px"
+                                    >
+                                        <h2>
+                                            <em>10 citate</em><br />
+                                            pentru o organizație vie
+                                        </h2>
+
+                                        <p class="lh-sm" style="font-size: 16px; font-weight: 300; max-width: 20em">
+                                            It is a long established fact that a reader will be distracted by the
+                                            readable content of a page when looking at its layout. The point of using
+                                            Lorem Ipsum
+                                        </p>
+
+                                        <button class="pr-ghost-button ms-4 mt-4">Descarcă PDF</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center py-5">
+                                <button class="pr-scroll-button" title="Scroll down" data-target-selector="#slide-4">
+                                    <svg viewBox="0 0 41 45" width="30" aria-hidden="true" focusable="false">
+                                        <use href="#pr-scroll-icon" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -219,5 +344,18 @@
         <p class="py-5">Aici vor fi mai multe secțiuni.</p>
         <p class="py-5">Aici vor fi mai multe secțiuni.</p>
         <p class="py-5">Aici vor fi mai multe secțiuni.</p>
+
+        <script>
+            document.querySelectorAll('.pr-scroll-button').forEach((button) => {
+                button.addEventListener('click', () => {
+                    const { targetSelector } = button.dataset;
+                    const target = document.querySelector(targetSelector);
+
+                    if (!target) return;
+
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+        </script>
     </body>
 </html>
