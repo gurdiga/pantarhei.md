@@ -4,7 +4,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "spellright.language": ["ro"],
+  "spellright.language": ["en", "ro"],
   "spellright.ignoreRegExpsByClass": {
     "html": ["/<style>[^]*?<\\/style>/gm"]
   },
