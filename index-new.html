@@ -408,8 +408,8 @@
                     </div>
                 </div>
 
-                <div class="row" style="font-size: 16px">
-                    <div class="col-md-4 offset-md-2 lh-sm" style="text-align: justify">
+                <div class="row lh-sm gap-4 mt-5" style="font-size: 16px; text-align: justify">
+                    <div class="col-md-4 offset-md-2">
                         <p
                             style="
                                 font-variant: small-caps;
@@ -442,10 +442,19 @@
                             trebuie să apară.
                         </p>
 
-                        <div class="pr-card ms-3" style="transform: translateX(0); margin-right: -15px">
+                        <div
+                            class="pr-card ms-3 mt-4"
+                            style="
+                                --shift: 170px;
+                                transform: translateX(calc(-1 * var(--shift)));
+                                margin-right: calc(-1 * (var(--shift) + 20px));
+                            "
+                        >
                             <h2>
-                                <em>10 citate</em><br />
-                                pentru o organizație vie
+                                <em>
+                                    7 puncte<br />
+                                    tare importante
+                                </em>
                             </h2>
 
                             <p class="lh-sm" style="font-size: 16px; font-weight: 300; max-width: 20em">
@@ -454,6 +463,51 @@
                             </p>
 
                             <button class="pr-ghost-button ms-4 mt-4">Descarcă PDF</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <p>
+                            Înțelegem cât de frustrant poate fi să observi că ai fost ineficient sau că reacția la
+                            schimbare a fost întârziată. Vestea bună, însă, este că poți schimba acest lucru. Eficiența
+                            și adaptabilitatea depind de cum gestionezi timpul, procesele, atitudinea și cunoștințele.
+                            Noi te putem ghida pentru a le optimiza și pentru a reacționa rapid și eficient la
+                            schimbare. De-a lungul anilor am testat și perfecționat metode care funcționează.
+                        </p>
+
+                        <p>
+                            Iată cum putem să facem: ne cunoaștem și analizăm nevoile tale. Nu oferim soluții standard.
+                            Într-o primă întâlnire discutăm și înțelegem specificul organizației tale pentru a explora o
+                            abordare potrivită. Construim, apoi, împreună, un plan de acțiune. Definim clar obiectivele
+                            și pașii necesari astfel încât să ai un plan structurat pe care să-l implementezi cu
+                            încredere.
+                        </p>
+
+                        <p>
+                            Implementăm și ajustăm. Odată ce începi schimbarea suntem alături de tine pentru feedback,
+                            ajustări și îmbunătățiri continue și astfel să asigurăm o tranziție de success.
+                        </p>
+
+                        <p>Așadar, programează o întâlnire și hai să găsim soluția potrivită pentru organizația ta.</p>
+
+                        <p>
+                            Până atunci descarcă acest PDF cu 5 principii esențiale despre o organizație vie care te
+                            poate inspira în acest proces.
+                        </p>
+
+                        <p>
+                            Este momentul să depășești stagnarea și să construiești o organizație eficientă, de
+                            încredere și capabilă să facă față provocărilor.
+                        </p>
+
+                        <div class="mt-5 d-flex flex-row align-items-start justify-content-between">
+                            <button data-target-selector="#slide-5" class="pr-scroll-button" title="Scroll down">
+                                <svg viewBox="0 0 41 45" width="30" aria-hidden="true" focusable="false">
+                                    <use href="#pr-scroll-icon" />
+                                </svg>
+                            </button>
+
+                            <img src="assets/images/pr_logo_2.png" style="width: 160px" alt="Panta Rhei logo" />
                         </div>
                     </div>
                 </div>
