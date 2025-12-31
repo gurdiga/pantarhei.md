@@ -117,12 +117,20 @@
             }
 
             .pr-em {
-                font-family: 'Alumni Sans', sans-serif;
-                font-size: 270%;
-                font-weight: 300;
-                font-style: normal;
+                font-size: 120%;
                 font-variant-caps: small-caps;
-                line-height: 100%;
+                font-weight: 600;
+            }
+
+            @media (min-width: 768px) {
+                .pr-sm-em {
+                    font-family: 'Alumni Sans', sans-serif;
+                    font-size: 270%;
+                    font-weight: 300;
+                    font-style: normal;
+                    font-variant-caps: small-caps;
+                    line-height: 100%;
+                }
             }
 
             .pr-large-ol {
@@ -336,30 +344,30 @@
             <div>
                 <div class="container pt-4">
                     <div class="row">
-                        <div class="col-7 offset-md-3 pt-5 pe-5">
+                        <div class="col-md-7 offset-md-3 pt-5 pe-md-5">
                             <p>
-                                <em class="pr-em">Noi la Panta Rhei înțelegem</em> cât de frustrant poate fi să fii
-                                mereu presat de timp, să nu observi schimbările și să simți că echipa ta nu performează
-                                la potențialul ei. În lumea dinamică de azi, gestionarea timpului, adaptarea la
-                                schimbare și leadership-ul eficient sunt esențiale pentru success.
+                                <em class="pr-em pr-sm-em">Noi la Panta Rhei înțelegem</em> cât de frustrant poate fi să
+                                fii mereu presat de timp, să nu observi schimbările și să simți că echipa ta nu
+                                performează la potențialul ei. În lumea dinamică de azi, gestionarea timpului, adaptarea
+                                la schimbare și leadership-ul eficient sunt esențiale pentru success.
                             </p>
 
                             <p class="mt-4">
                                 De-a lungul anilor am testat și perfecționat
-                                <em class="pr-em">metode care funcționează</em>. Știm cum să te ajutăm să optimizezi
-                                procesele, să crești eficiența și să transformi provocările în oportunități. Fie că vrei
-                                să-ți structurezi mai bine proiectele, să îți motivezi echipa sau să poziționezi
-                                brand-ul mai bine, avem soluții potrivite pentru tine.
+                                <em class="pr-em pr-sm-em">metode care funcționează</em>. Știm cum să te ajutăm să
+                                optimizezi procesele, să crești eficiența și să transformi provocările în oportunități.
+                                Fie că vrei să-ți structurezi mai bine proiectele, să îți motivezi echipa sau să
+                                poziționezi brand-ul mai bine, avem soluții potrivite pentru tine.
                             </p>
 
                             <p class="mt-4">
-                                <em class="pr-em">Eficiența ține de timp, procese, atitudine și cunoștințe</em>. Îți
-                                putem arăta cum să ți le gestionez mai bine astfel încât să obții rezultate reale și
-                                durabile.
+                                <em class="pr-em pr-sm-em">Eficiența ține de timp, procese, atitudine și cunoștințe</em
+                                >. Îți putem arăta cum să ți le gestionez mai bine astfel încât să obții rezultate reale
+                                și durabile.
                             </p>
 
-                            <div class="row mt-5 pt-5">
-                                <div class="col-md-6">
+                            <div class="row mt-0 mt-md-5 pt-5">
+                                <div class="col-md-6 text-center text-md-start">
                                     <button class="pr-cta-button">Programează o întâlnire</button>
 
                                     <img
@@ -371,7 +379,10 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <div class="pr-card ms-3" style="transform: translateY(0); margin-right: -250px">
+                                    <div
+                                        class="pr-card ms-3 d-none d-md-block"
+                                        style="transform: translateY(0); margin-right: -250px"
+                                    >
                                         <h2>
                                             <em>10 citate</em><br />
                                             pentru o organizație vie
