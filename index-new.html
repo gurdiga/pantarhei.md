@@ -48,16 +48,6 @@
                 }
             }
 
-            .hero-copy {
-                font-size: 1rem;
-            }
-
-            @media (min-width: 768px) {
-                .hero-copy {
-                    font-size: 1.25rem;
-                }
-            }
-
             button {
                 font-size: 16px;
             }
@@ -156,6 +146,10 @@
                 line-height: 1;
                 min-width: 1em;
             }
+
+            .mt-n4 {
+                margin-top: -1.5rem !important;
+            }
         </style>
     </head>
 
@@ -206,7 +200,7 @@
                         <span style="font-weight: 200">ce îți aduc puterea schimbării</span>
                     </h1>
 
-                    <div class="hero-copy" style="font-weight: 200; max-width: 35em; margin-top: 32px">
+                    <div style="font-weight: 200; max-width: 35em; margin-top: 32px">
                         <p>
                             Panta Rhei este o companie de training non-formal, consultanță în domeniul organizațional si
                             coaching. Pregătiți pentru schimbare, produsele și serviciile le construim împreună cu
@@ -220,9 +214,13 @@
                     </div>
 
                     <div class="d-flex align-items-start ps-0 ps-md-5 pb-5 mb-4" style="margin-top: 70px">
-                        <button class="pr-cta-button order-1 w-50">Programează o întâlnire</button>
+                        <button class="pr-cta-button order-1 w-50">
+                            Programează<br class="d-inline d-md-none" />
+                            o întâlnire
+                        </button>
                         <button class="pr-cta-button order-3 w-50">
-                            Despre <br class="d-inline d-md-none" />Panta Rhei
+                            Despre<br class="d-inline d-md-none" />
+                            Panta Rhei
                         </button>
 
                         <button
@@ -240,23 +238,24 @@
             </div>
         </section>
 
-        <section id="slide-2" style="display: none; /* TODO: remove when mobile done */">
+        <section id="slide-2">
             <div class="container" style="max-width: 1100px">
                 <div class="row justify-content-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 px-0 px-md-3">
                         <img
                             src="assets/images/slide-2-hero-new.jpg"
-                            style="width: 500px; margin-top: -2em; max-width: 100%"
+                            class="w-100 w-md-auto mt-n4"
+                            style="max-width: 500px"
                             alt=""
                         />
                     </div>
 
                     <div class="col-md-6 py-4">
-                        <h2 class="mt-5" style="max-width: 12em">
+                        <h2 class="mt-3 mt-md-5" style="max-width: 12em">
                             E foarte posibil să te afli în următoarea situație:
                         </h2>
 
-                        <ul class="list-unstyled ms-3 mt-3" style="font-weight: 300">
+                        <ul class="list-unstyled ms-md-3 mt-3" style="font-weight: 300">
                             <li class="mt-1">Organizația ta nu-și atinge potențialul</li>
                             <li class="mt-1">Organizația ta nu este suficient de eficientă</li>
                             <li class="mt-1">Echipa ta nu manifestă claritate</li>
@@ -267,7 +266,10 @@
 
                 <div class="row flex-row-reverse">
                     <div class="col-md-6">
-                        <div class="pr-card ms-3" style="transform: translateY(-100px); margin-right: -50px">
+                        <div
+                            class="pr-card ms-3 d-none d-md-block"
+                            style="transform: translateY(-100px); margin-right: -50px"
+                        >
                             <h2>
                                 <em>5 gânduri valide</em><br />
                                 pentru o organizație vie
@@ -282,7 +284,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 py-4 d-flex flex-column align-items-center">
+                    <div class="col-md-6 py-md-4 d-flex flex-column align-items-md-center">
                         <h2 style="max-width: 12em">Panta Rhei te poate ajuta:</h2>
 
                         <div class="flex-shrink-0">
@@ -294,7 +296,7 @@
                                 <li class="mt-1">Să performezi ca în Champions League</li>
                             </ul>
 
-                            <div class="mt-4 ps-4 d-flex flex-column align-items-start">
+                            <div class="mt-4 ps-ms-4 d-flex flex-column align-items-center align-items-md-start">
                                 <button class="pr-cta-button">Programează o întâlnire</button>
 
                                 <img
@@ -312,7 +314,6 @@
 
         <section
             id="slide-3"
-            style="display: none; /* TODO: remove when mobile done */"
             class="d-flex justify-content-center align-items-center"
             style="
                 min-height: 100vh;
@@ -390,7 +391,7 @@
             </div>
         </section>
 
-        <section id="slide-4" style="display: none; /* TODO: remove when mobile done */">
+        <section id="slide-4">
             <div class="container pt-4">
                 <div class="row" style="font-weight: 200">
                     <div class="col-md-6">
@@ -543,7 +544,7 @@
             </div>
         </section>
 
-        <section id="slide-5" class="mt-5" style="display: none; /* TODO: remove when mobile done */">
+        <section id="slide-5" class="mt-5">
             <style>
                 :root {
                     --flipped-bg-height: 270px;
@@ -728,7 +729,7 @@
             </div>
         </section>
 
-        <section id="slide-6" style="display: none; /* TODO: remove when mobile done */">
+        <section id="slide-6">
             <div class="container">
                 <div class="row lh-sm gap-4" style="font-size: 16px; text-align: justify">
                     <div class="col-md-4 offset-md-2">
