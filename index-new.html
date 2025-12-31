@@ -38,6 +38,16 @@
                 font-size: 18px;
             }
 
+            .hero-heading {
+                font-size: 2.5em;
+            }
+
+            @media (min-width: 768px) {
+                .hero-heading {
+                    font-size: 4em;
+                }
+            }
+
             button {
                 font-size: 16px;
             }
@@ -168,6 +178,7 @@
                 background-image: url('assets/images/pr_site-hero.jpg');
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: cover;
                 color: white;
             "
         >
@@ -180,7 +191,7 @@
                         alt="Panta Rhei logo"
                     />
 
-                    <h1 class="my-5" style="font-size: 4em">
+                    <h1 class="my-5 hero-heading">
                         <span style="font-size: 150%">Traininguri</span><br />
                         <span style="font-weight: 200">ce îți aduc puterea schimbării</span>
                     </h1>
@@ -217,11 +228,15 @@
             </div>
         </section>
 
-        <section id="slide-2">
+        <section id="slide-2" style="display: none; /* TODO: remove when mobile done */">
             <div class="container" style="max-width: 1100px">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
-                        <img src="assets/images/slide-2-hero-new.jpg" style="width: 500px; margin-top: -2em" alt="" />
+                        <img
+                            src="assets/images/slide-2-hero-new.jpg"
+                            style="width: 500px; margin-top: -2em; max-width: 100%"
+                            alt=""
+                        />
                     </div>
 
                     <div class="col-md-6 py-4">
@@ -285,6 +300,7 @@
 
         <section
             id="slide-3"
+            style="display: none; /* TODO: remove when mobile done */"
             class="d-flex justify-content-center align-items-center"
             style="
                 min-height: 100vh;
@@ -362,7 +378,7 @@
             </div>
         </section>
 
-        <section id="slide-4">
+        <section id="slide-4" style="display: none; /* TODO: remove when mobile done */">
             <div class="container pt-4">
                 <div class="row" style="font-weight: 200">
                     <div class="col-md-6">
@@ -515,7 +531,7 @@
             </div>
         </section>
 
-        <section id="slide-5" class="mt-5">
+        <section id="slide-5" class="mt-5" style="display: none; /* TODO: remove when mobile done */">
             <style>
                 :root {
                     --flipped-bg-height: 270px;
@@ -700,7 +716,7 @@
             </div>
         </section>
 
-        <section id="slide-6">
+        <section id="slide-6" style="display: none; /* TODO: remove when mobile done */">
             <div class="container">
                 <div class="row lh-sm gap-4" style="font-size: 16px; text-align: justify">
                     <div class="col-md-4 offset-md-2">
