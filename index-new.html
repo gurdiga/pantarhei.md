@@ -168,6 +168,12 @@
                 .h2-md-pr {}
                 */
             }
+
+            @media (min-width: 768px) {
+                .text-md-justify-pr {
+                    text-align: justify !important;
+                }
+            }
         </style>
     </head>
 
@@ -461,7 +467,7 @@
                     </div>
                 </div>
 
-                <div class="row lh-sm gap-4 mt-5" style="font-size: 16px; text-align: justify">
+                <div class="row lh-sm gap-md-4 mt-5 text-start text-md-justify-pr" style="font-size: 16px">
                     <div class="col-md-4 offset-md-2">
                         <p
                             style="
@@ -496,7 +502,7 @@
                         </p>
 
                         <div
-                            class="pr-card ms-3 mt-4"
+                            class="pr-card ms-3 mt-4 d-none d-md-block"
                             style="
                                 --shift: 170px;
                                 transform: translateX(calc(-1 * var(--shift)));
@@ -553,14 +559,25 @@
                             încredere și capabilă să facă față provocărilor.
                         </p>
 
-                        <div class="mt-5 d-flex flex-row align-items-start justify-content-between">
-                            <button data-target-selector="#slide-5" class="pr-scroll-button" title="Scroll down">
+                        <div
+                            class="mt-5 d-flex flex-column flex-md-row align-items-center gap-5 gap-md-0 justify-content-between"
+                        >
+                            <button
+                                data-target-selector="#slide-5"
+                                class="pr-scroll-button order-2 order-md-1"
+                                title="Scroll down"
+                            >
                                 <svg viewBox="0 0 41 45" width="30" aria-hidden="true" focusable="false">
                                     <use href="#pr-scroll-icon" />
                                 </svg>
                             </button>
 
-                            <img src="assets/images/pr_logo_2.png" style="width: 160px" alt="Panta Rhei logo" />
+                            <img
+                                class="order-1 order-md-2"
+                                src="assets/images/pr_logo_2.png"
+                                style="width: 160px"
+                                alt="Panta Rhei logo"
+                            />
                         </div>
                     </div>
                 </div>
