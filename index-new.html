@@ -159,6 +159,23 @@
                 margin-top: -1.5rem !important;
             }
 
+            @media (min-width: 768px) {
+                .mt-md-n4 {
+                    margin-top: -1.5rem !important;
+                }
+            }
+
+            .mx-n3 {
+                margin-top: -0.75rem !important;
+            }
+
+            @media (min-width: 768px) {
+                .mx-md-n3 {
+                    margin-left: -0.75rem !important;
+                    margin-right: -0.75rem !important;
+                }
+            }
+
             .h2-pr {
                 font-size: 2rem;
             }
@@ -268,7 +285,7 @@
                     <div class="col-md-6 px-0 px-md-3">
                         <img
                             src="assets/images/slide-2-hero-new.jpg"
-                            class="w-100 w-md-auto mt-n4"
+                            class="w-100 w-md-auto mt-md-n4"
                             style="max-width: 500px"
                             alt=""
                         />
@@ -454,9 +471,9 @@
                     </div>
 
                     <div class="col-md-6 px-0 px-md-3">
-                        <img src="assets/images/hand-with-cubes.jpg" style="max-width: 100%" alt="" />
+                        <img src="assets/images/hand-with-cubes.jpg" class="w-100" alt="" />
 
-                        <div class="row mt-5">
+                        <div class="row mt-5 mx-0 mx-md-n3">
                             <div class="col-12 col-md-6 text-center text-md-start">
                                 <button class="pr-cta-button">Programează o întâlnire</button>
                             </div>
@@ -590,13 +607,6 @@
                     --flipped-bg-height: 270px;
                 }
 
-                #slide-5 {
-                    background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100px, transparent 100%),
-                        url('assets/images/trenul.jpg') center var(--flipped-bg-height) no-repeat;
-                    background-size: 100% auto;
-                    color: white;
-                }
-
                 #slide-5::before {
                     content: ' ';
                     display: block;
@@ -608,18 +618,47 @@
                     width: 100%;
                     z-index: -1;
                 }
+
+                #slide-5 {
+                    background: none;
+                }
+
+                #slide-5::before {
+                    content: none;
+                }
+
+                @media (min-width: 768px) {
+                    #slide-5::before {
+                        content: ' ';
+                        display: block;
+                        height: var(--flipped-bg-height);
+                        background-image: url('assets/images/trenul.jpg');
+                        background-size: 100% auto;
+                        transform: scaleY(-1);
+                        position: absolute;
+                        width: 100%;
+                        z-index: -1;
+                    }
+
+                    #slide-5 {
+                        background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100px, transparent 100%),
+                            url('assets/images/trenul.jpg') center var(--flipped-bg-height) no-repeat;
+                        background-size: 100% auto;
+                        color: white;
+                    }
+                }
             </style>
 
             <div class="container pt-4">
                 <div class="row lh-sm">
                     <div class="col">
-                        <h2 class="text-white mt-5 mb-3" style="font-size: 350%; font-weight: 300">
+                        <h2 class="text-md-white mt-5 mb-3" style="font-size: 350%; font-weight: 300">
                             De ce Panta Rhei?
                         </h2>
                     </div>
                 </div>
 
-                <div class="row lh-sm" style="font-size: 14px; text-align: justify">
+                <div class="row lh-sm text-start text-md-justify-pr" style="font-size: 14px">
                     <div class="col-md-4">
                         <p>
                             „Panta Rhei” tradus ca „totul curge” este unul dintre cele mai frumoase citate filosofice
@@ -716,7 +755,9 @@
                     </div>
                 </div>
 
-                <div class="row lh-sm" style="font-size: 14px; text-align: justify; margin-top: 300px">
+                <div class="row spacer d-none d-md-block" style="margin-top: 300px"></div>
+
+                <div class="row lh-sm text-start text-md-justify-pr" style="font-size: 14px">
                     <div class="col-md-4">
                         <p>
                             Aici la Panta Rhei exact asta stă în centrul atenției noastre. Așa cum Marcus Aurelius
@@ -724,7 +765,7 @@
                             e vorba de schimbare:
                         </p>
 
-                        <h3 class="mb-0 mt-4" style="font-size: 230%">Project Management</h3>
+                        <h3 class="mb-md-0 mt-4" style="font-size: 230%">Project Management</h3>
 
                         <p>
                             Schimbarea unei situații de moment cu una mai bună, mai eficientă, mai pregătită pentru
@@ -733,33 +774,40 @@
                     </div>
 
                     <div class="col-md-4">
-                        <h3 class="mb-0" style="font-size: 230%">Time Management</h3>
+                        <h3 class="mb-md-0" style="font-size: 230%">Time Management</h3>
 
                         <p>Schimbarea atitudinii față de timpul care curge neîncetat</p>
 
-                        <h3 class="mb-0 mt-4" style="font-size: 230%">Change Management</h3>
+                        <h3 class="mb-md-0 mt-4" style="font-size: 230%">Change Management</h3>
 
                         <p>Schimbarea atitudinii în fața Schimbării! 😊</p>
 
-                        <h3 class="mb-0 mt-4" style="font-size: 230%">Coaching</h3>
+                        <h3 class="mb-md-0 mt-4" style="font-size: 230%">Coaching</h3>
 
                         <p>Schimbare interioară, atitudine, acțiune</p>
                     </div>
 
                     <div class="col-md-4">
-                        <p>
+                        <p class="mt-5 mb-4 mt-md-0">
                             Lista poate continua și cu siguranță, în descriere, Schimbarea va fi pilonul principal de
                             fiecare dată.
                         </p>
 
-                        <div class="mt-5">
+                        <div class="mt-3 mt-md-5 d-flex gap-4 flex-column align-items-center d-md-block">
                             <button class="pr-cta-button">Programează o întâlnire</button>
 
                             <div class="d-flex flex-column align-items-end">
                                 <img
+                                    class="d-block d-md-none"
+                                    src="assets/images/pr_logo_2.png"
+                                    style="width: 160px"
+                                    alt="Panta Rhei logo"
+                                />
+
+                                <img
                                     src="assets/images/hero_logo.png"
                                     style="width: 160px"
-                                    class="my-5"
+                                    class="my-5 d-none d-md-block"
                                     alt="Panta Rhei logo"
                                 />
                             </div>
@@ -771,18 +819,21 @@
 
         <section id="slide-6">
             <div class="container">
-                <div class="row lh-sm gap-4" style="font-size: 16px; text-align: justify">
-                    <div class="col-md-4 offset-md-2">
+                <div class="row lh-sm gap-4 text-start text-md-justify-pr mt-5 mt-md-0" style="font-size: 16px">
+                    <div class="col-md-4 offset-md-2 px-0 px-md-3">
                         <img
                             src="assets/images/bogdan.jpg"
                             alt="Bogdan Craiu"
                             width="540"
+                            class="d-none d-md-block"
                             style="margin-top: -20px; margin-left: -130px"
                         />
+
+                        <img src="assets/images/bogdan.jpg" alt="Bogdan Craiu" class="d-block d-md-none w-100" />
                     </div>
 
                     <div class="col-md-4" style="font-size: 14px; font-weight: 500">
-                        <h2 class="mt-5" style="font-weight: 300">Bogdan Craiu</h2>
+                        <h2 class="mt-3 mt-md-5 h2-pr h2-md-pr" style="font-weight: 300">Bogdan Craiu</h2>
 
                         <p>
                             fondatorul Panta Rhei, certificat în Administrare de Business, în Project Management, în
@@ -813,7 +864,16 @@
                             construcții ontologice.
                         </p>
 
-                        <button class="pr-cta-button mt-4">Programează o întâlnire</button>
+                        <button class="pr-cta-button mt-5 mt-md-4 d-block mx-auto mx-md-0">
+                            Programează o întâlnire
+                        </button>
+
+                        <img
+                            class="d-block d-block mx-auto mx-md-0 d-md-none mt-5"
+                            src="assets/images/pr_logo_2.png"
+                            style="width: 160px"
+                            alt="Panta Rhei logo"
+                        />
                     </div>
                 </div>
             </div>
